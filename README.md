@@ -16,7 +16,7 @@ A full stack Javascript application which visualizes version control data coming
 - Styled components for general styling purposes
 
 The connection to Elasticsearch API is done by Jani's Kibana username/pass via basic auth, which is defined in .env file.
-So ff you want to run the app locally, create a .env file to the project's root and then ask Jani for the credentials.
+So if you want to run the app locally, create a .env file to the project's root and then ask Jani for the credentials.
 After that it's just a matter of running both server and client:
 
 #### Server: ####
