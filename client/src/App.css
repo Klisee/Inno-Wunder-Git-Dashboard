@@ -1,0 +1,12 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #3673ab;
+  text-decoration: none;
+}
+
+.main-content {
+  padding: 0 15px;
+}
