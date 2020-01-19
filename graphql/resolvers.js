@@ -5,7 +5,6 @@ require('dotenv').config()
 //Elasticsearch endpoint
 const esClient = new Client({ node: process.env.ES_HOST })
 
-
 // Resolvers
 const resolvers = {
   Query: {
