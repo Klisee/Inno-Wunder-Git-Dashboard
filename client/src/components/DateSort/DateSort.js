@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { greyLight } from './Style/Settings'
+import { greyLight } from '../Style/Settings'
 
 const StyledDateSort = styled.div`
   margin-top: 2rem;
@@ -17,7 +17,12 @@ const StyledDateSortButton = styled.button`
   background-color: ${greyLight};
   font-weight: bold;
 `
-
+/**
+ * DateSort component, 
+ * sorts commits either by today or this weeek
+ * @param {int} commitsToday
+ * @param {int} commitsThisWeek
+ */
 function DateSort(props) {
   return (
     <StyledDateSort>

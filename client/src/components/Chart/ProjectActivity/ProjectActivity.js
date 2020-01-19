@@ -1,12 +1,17 @@
 import React from 'react'
 import { VictoryBar, VictoryChart, VictoryAxis } from 'victory'
 import styled from 'styled-components'
-import { StyledHeading3 } from '../Style/Heading'
+import { StyledHeading3 } from '../../Style/Heading'
 
 const StyledProjectActivity = styled.div`
   text-align: center;
 `
 
+/**
+ * ProjectActivity component,
+ * visualizes the most active projects
+ * @param {array} activeProjects - returns the most active projects in an array of objects
+ */
 function ProjectActivity(props) {
   return (
     <StyledProjectActivity>

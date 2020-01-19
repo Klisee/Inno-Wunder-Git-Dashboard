@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ApolloClient from 'apollo-boost'
 import { ApolloProvider } from 'react-apollo'
-import Header from './components/Header/Header'
+import Header from './components/Header'
 import Router from './components/Router'
 import StyledContainer from './components/Style/Container'
 import './App.css'

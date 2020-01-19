@@ -19,7 +19,9 @@ const StyledLogo = styled.a`
   background-image: url(${logo});
   background-repeat: no-repeat;
 `
-
+/**
+ * Header component
+ */
 function Header() {
   return (
     <StyledHeader>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { orange } from './Settings'
+import { orange } from '../Settings'
 
 const StyledNavUl = styled.ul`
   display: flex;

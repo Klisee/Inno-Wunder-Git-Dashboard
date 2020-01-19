@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { orange, greyLight } from './Style/Settings'
-import { StyledHeading3 } from './Style/Heading'
+import { orange, greyLight } from '../Style/Settings'
+import { StyledHeading3 } from '../Style/Heading'
 
 const StyledCommitCount = styled.div`
   text-align: center;
@@ -17,6 +17,11 @@ const StyledCommitCountNumber = styled.div`
   background: ${greyLight};
 `
 
+/**
+ * CommitCount component
+ * @param {string} commitText - The descriptive text
+ * @param {int} commitCount - The actual commit count
+ */
 function CommitCount(props) {
   return (
     <StyledCommitCount>

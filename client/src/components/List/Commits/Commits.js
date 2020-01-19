@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Query } from 'react-apollo'
-import { commitsLatest } from '../../gql/commits'
+import { commitsLatest } from '../../../gql/commits'
 import styled from 'styled-components'
-import { greyLight } from '../Style/Settings'
-import { StyledHeading3 } from '../Style/Heading'
+import { greyLight } from '../../Style/Settings'
+import { StyledHeading3 } from '../../Style/Heading'
 
 const StyledCommits = styled.div`
   max-height: 400px;
@@ -24,7 +24,10 @@ const StyledCommitMessage = styled.div`
 const StyledCommitTime = styled.div`
   font-size: 0.8rem;
 `
-
+/**
+ * Commits component,
+ * renders the latest commits in a list
+ */
 class Commits extends Component {
   render() {
     return(

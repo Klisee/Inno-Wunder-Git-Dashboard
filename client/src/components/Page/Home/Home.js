@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import ApolloClient from 'apollo-boost'
-import CommitCount from '../CommitCount'
-import Commits from '../List/Commits'
-import ProjectActivity from '../Chart/ProjectActivity'
-import DateSort from '../DateSort'
+import CommitCount from '../../CommitCount'
+import Commits from '../../List/Commits'
+import ProjectActivity from '../../Chart/ProjectActivity'
+import DateSort from '../../DateSort'
 import styled from 'styled-components'
-import { commitsToday, commitsThisWeek } from '../../gql/commits'
-import { StyledHeading2 } from '../Style/Heading';
+import { commitsToday, commitsThisWeek } from '../../../gql/commits'
+import { StyledHeading2 } from '../../Style/Heading'
 
 const StyledHomeWrapper = styled.div`
   display: grid;
@@ -20,22 +20,31 @@ const client = new ApolloClient({
   uri: "http://localhost:4000/",
 });
 
-// The texts used on home page
+// The texts used on the home page
 const commitsTodayText = 'Commits today'
 const commitsThisWeekText = 'Commits this week'
 
+/**
+ * Home component
+ */
 class Home extends Component {
   constructor() {
     super()
     this.state = {
       commitText: commitsTodayText,
-      commitCount: '',
+      commitCount: null,
       ActiveProjects: null
     }
 
     this.commits = this.commits.bind(this);
   }
 
+  /**
+   * Sort the repositories by their commit activity into
+   * an array of objects
+   * @param {qql} query 
+   * @param {string} commitText 
+   */
   commits(query, commitText) {
     client.query({ query: query })
       .then(res => {
