@@ -13,7 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "@elastic/elasticsearch": "^7.2.0",
-    "apollo-server": "^2.6.4",
+    "apollo-server": "^2.14.2",
     "dotenv": "^8.0.0",
     "graphql": "^14.3.1"
   },
